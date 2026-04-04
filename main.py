@@ -1,4 +1,3 @@
-import os
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -53,3 +52,8 @@ async def generate_photo(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+if__name__=="__main__":
+import os
+port = int(os.environ.get("PORT",8000))
+print(f"端口：{port}"))
+uvicorn.run("main:app", host="0.0.0.0", port = port,reload=False)
