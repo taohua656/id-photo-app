@@ -52,7 +52,7 @@ async def generate_photo(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-if__name__=="__main__":
+if __name__ == "__main__":
 import os
 port = int(os.environ.get("PORT",8000))
 printf("端口：{port}")
