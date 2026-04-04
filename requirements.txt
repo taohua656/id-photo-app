@@ -4,7 +4,7 @@ python-multipart
 rembg
 pillow
 numpy
-onnxruntime
+onnxruntime-cpu
 supabase
 pydantic
 python-dotenv
