@@ -1,3 +1,4 @@
+import os
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
@@ -7,6 +8,7 @@ from processor import process_id_photo
 from database import create_order, update_order_status, get_order
 
 app = FastAPI()
+port = int(os.environ.get("PORT",8000))
 
 app.add_middleware(
     CORSMiddleware,
@@ -54,4 +56,4 @@ async def generate_photo(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=port)
