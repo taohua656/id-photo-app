@@ -9,3 +9,4 @@ supabase
 pydantic
 python-dotenv
 opencv-python-headless
+gunicorn
