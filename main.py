@@ -5,9 +5,13 @@ from pydantic import BaseModel
 import uuid
 from processor import process_id_photo
 from database import create_order, update_order_status, get_order
-
+from fastapi.responses import HTMLResponse  # 导入这个
 app = FastAPI()
-
+# --- 加上这段新代码 ---
+@app.get("/")
+def read_root():
+    return HTMLResponse(content="<h1>证件照后端API运行正常！请访问 /docs 查看接口文档</h1>")
+    
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
