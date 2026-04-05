@@ -1,10 +1,10 @@
 fastapi
 uvicorn
 python-multipart
-rembg[cpu]
+rembg
 pillow
 numpy
-#onnxruntime-cpu
+onnxruntime-cpu
 supabase
 pydantic
 python-dotenv
