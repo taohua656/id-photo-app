@@ -52,8 +52,8 @@ async def generate_photo(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-if __name__ == "__main__":
-    import os
-    port = int(os.environ.get("PORT",8000))
-    printf("端口：{port}")
-    uvicorn.run("main:app", host="0.0.0.0", port = port,reload=False)
+#if __name__ == "__main__":
+#    import os
+#    port = int(os.environ.get("PORT",8000))
+#    printf("端口：{port}")
+#    uvicorn.run("main:app", host="0.0.0.0", port = port,reload=False)
