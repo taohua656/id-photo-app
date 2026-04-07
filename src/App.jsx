@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { motion } from 'framer-motion';
 
+
 const API_URL = import.meta.env.VITE_API_URL;
 const PAYPAL_CLIENT_ID = import.meta.env.VITE_PAYPAL_CLIENT_ID;
 
