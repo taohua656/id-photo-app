@@ -1,5 +1,6 @@
 import os
-os.environ['STREAMLIT_SERVER_ENABLE_STATIC_SERVING'] = 'true'
+os.environ["REMGG_SESSION_NAME"] = "u2netp"
+os.environ["OMP_NUM_THREADS"] = "1"
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
