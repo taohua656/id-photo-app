@@ -26,7 +26,7 @@ def process_id_photo(image_bytes, color):
         
         # 【核心优化】如果图片过大，先进行缩小
         # 证件照通常不需要 4000px 的宽度，限制在 2000px 足以保证清晰度
-        max_width = 2000
+        max_width = 1000
         if input_image.width > max_width:
             ratio = max_width / input_image.width
             new_height = int(input_image.height * ratio)
