@@ -1,3 +1,5 @@
+import os
+os.environ['STREAMLIT_SERVER_ENABLE_STATIC_SERVING'] = 'true'
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
