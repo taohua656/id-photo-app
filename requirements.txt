@@ -1,5 +1,11 @@
 streamlit
-rembg
-Pillow
-onnxruntime
+fastapi
 uvicorn
+python-multipart
+rembg
+pillow
+numpy
+onnxruntime
+supabase
+pydantic
+python-dotenv
